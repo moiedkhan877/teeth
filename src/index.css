@@ -1,13 +1,291 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cormorant&family=Courgette&family=Crete+Round:ital@1&family=DM+Serif+Display&family=Montserrat:ital,wght@0,200;0,300;0,400;1,200;1,900&family=Nanum+Myeongjo:wght@700&family=Open+Sans:ital,wght@1,300&family=Playfair+Display:wght@700&family=Poppins:wght@300;400&family=Roboto:wght@300&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,body{
+   width: 100%;
+   height: 100%;
+   font-family: 'Poppins', sans-serif;
 }
+
+.nav{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.nav #logo{
+    height: 20%;
+}
+
+.color{
+    width: 120px;
+    height: 200px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.col{
+    width: 100%;
+    height: 30%;
+    margin-top: -2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     color: #fff;
+}
+
+.color1{
+    background-image: url(https://html.onesignals.club/vector-3@2x.60d04e57.png);
+}
+
+.color2{
+    background-image: url(https://html.onesignals.club/vector-31@2x.3f378ceb.png);
+}
+
+.color3{
+    background-image: url(https://html.onesignals.club/vector-32@2x.8a5255ac.png);
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: #B9DCFF;
+    overflow: hidden;
+}
+
+.main img{
+    width: 105%;
+    height: 500px;
+    margin-top: -22%; 
+} 
+.main h1{
+    font-family: 'Poppins', sans-serif;
+    width: 55%;
+    text-align: center;
+    margin-left: 18%;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 600;
+}
+.main span{
+    font-size: 65px;
+    color: #777;
+}
+.elem{
+    width: 50%;
+    height: 230px;
+    margin-left: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.box{
+    width: 180px;
+    height: 180px;
+    position: relative;
+    
+}
+.box img{
+    top: 30%;
+    left: -5%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+.rec{
+    width: 50%;
+    height: 100%;
+}
+
+.text{
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 50px;
+    border: 1px solid #ffffffa0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 30px;
+   color: #fff;
+}
+.item{
+    width: 150px;
+    height: 20px;
+    margin-left: 20px;
+    position: absolute;
+    
+}
+button {
+    padding: 10px 30px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 900;
+    margin-top: 20px;
+    color: red;
+    margin-left: 10px;
+    background-color: transparent;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+#btn{
+    background: #fff;
+}
+#btm{
+    margin-top: -7%;
+    z-index: 99999;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width:600px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+     html,body{
+        width: 100%;
+        height: 100%;
+        font-family: 'Poppins', sans-serif;
+     }
+     .nav{
+         position: absolute;
+         top: 0;
+         width: 100%;
+         height: 20%;
+         display: flex;
+         font-size: 6%;
+         justify-content: space-between;  
+     }
+     .nav #logo{
+         height: 30%;
+     }
+     .color{
+         width: 15%;
+         height: 52%;
+         margin-top:1vmax;
+         margin-right: 2%;
+     }
+     .col{
+         width: 100%;
+         height: 40%;
+         margin-top: -2%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+          color: #fff;
+     }
+    
+     .color1{
+         background-image: url(https://html.onesignals.club/vector-3@2x.60d04e57.png);
+     }
+     .color2{
+         background-image: url(https://html.onesignals.club/vector-31@2x.3f378ceb.png);
+     }
+     .color3{
+         background-image: url(https://html.onesignals.club/vector-32@2x.8a5255ac.png);
+     }
+     .main{
+         width: 100%;
+         height: 100vh;
+         background-color: #B9DCFF;
+         overflow: hidden;
+     }
+     .main img{
+         width:100vw ;
+         height: 15vh;
+         margin-top: -4%;
+     }
+     .main h1{
+        font-family: 'Poppins', sans-serif;
+        width: 70%;
+        text-align: center;
+        margin-left: 18%;
+        margin-top: 10%;
+        font-size: 1.8vmax;
+        font-weight: 600;
+    }
+    .main span{
+        font-size: 1vmax;
+        color: #777;
+    }
+    .elem{
+        width: 50%;
+        
+        margin-left: 10%;
+        margin-top: 12vmax;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        
+    }
+    .box img{
+        top: 20%;
+        left: -5%;
+        width: 290%;
+        height: 100%;
+        position: absolute;
+        margin-left: 4.7vmax;
+        
+    }
+    .rec{
+        width: 50%;
+        height: 100%;
+        /* background-color: darkolivegreen; */
+    }
+    .text{
+        width: 10vmax;
+        height: 6vmax;
+        border-radius: 4%;
+        margin-top: 4.3vmax;
+        margin-left:14.5vmax ;
+        border: 1px solid #ffffffa0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        font-size: 3vmax;
+        color: #fff;
+    }
+    .item{
+        width: 3vmax;
+        height: 2vmax;
+        margin-left: 5vmax;
+    }
+
+    .btn1{
+        margin-left: 12vmax;
+    }
+    #btm{
+        margin-top: -3%;
+        z-index: 99999;
+        position: relative;
+        overflow: hidden;
+    }
+    .img12{
+        margin-top: 24.4vmax;
+    }
+    #tee{
+        margin-top: 1vmax;
+       
+    }
+  
+
+
+}
+
