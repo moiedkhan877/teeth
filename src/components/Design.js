@@ -96,10 +96,8 @@ const Design = () => {
             </div>
 
             <div className="btn1">
-              <button id="btn" onClick={startTimer}>
-                Pause
-              </button>
-              <button onClick={stopTimer}>Cancel</button>
+<button id="btn" onClick={stopTimer}> Pause </button>
+              <button onClick={startTimer}>Cancel</button>
             </div>
           </div>
         </div>
